@@ -28,7 +28,7 @@ export default function TaskHookForm({ kisiler, submitFn }) {
 
   return (
     <form className="taskForm" onSubmit={handleSubmit(mySubmit)}>
-      <div className="form-line">
+      <div className="pt-4">
         <label className="input-label" htmlFor="title">
           Başlık
         </label>
@@ -42,7 +42,7 @@ export default function TaskHookForm({ kisiler, submitFn }) {
         {errors.title && <p className="input-error">{errors.title.message}</p>}
       </div>
 
-      <div className="form-line">
+      <div className="pt-4">
         <label className="input-label" htmlFor="description">
           Açıklama
         </label>
@@ -64,7 +64,7 @@ export default function TaskHookForm({ kisiler, submitFn }) {
         )}
       </div>
 
-      <div className="form-line">
+      <div className="pt-4">
         <label className="input-label">İnsanlar</label>
         <div>
           {kisiler.map((p) => (
